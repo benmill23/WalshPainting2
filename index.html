@@ -77,30 +77,6 @@
             width: auto;
         }
 
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--gray-700);
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-
-        .nav-links a:hover {
-            color: var(--navy);
-        }
-
-        .nav-phone {
-            font-weight: 600;
-            color: var(--navy) !important;
-        }
-
         .btn {
             display: inline-flex;
             align-items: center;
@@ -136,20 +112,30 @@
             color: var(--white);
         }
 
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0.5rem;
+        /* Call Now Button */
+        .mobile-call-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.625rem 1rem;
+            background: var(--navy);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: background 0.2s;
         }
 
-        .mobile-menu-btn span {
-            display: block;
-            width: 24px;
-            height: 2px;
-            background: var(--gray-700);
-            margin: 5px 0;
+        .mobile-call-btn:hover {
+            background: var(--navy-light);
+        }
+
+        .mobile-call-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
         }
 
         /* Hero */
@@ -637,34 +623,38 @@
         }
 
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--white);
-                flex-direction: column;
-                padding: 1.5rem;
-                gap: 1rem;
-                border-bottom: 1px solid var(--gray-200);
-                box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .mobile-menu-btn {
-                display: block;
-            }
-
             .hero {
-                padding: 7rem 1.5rem 3rem;
+                padding: 5.5rem 1.5rem 2rem;
             }
 
             .hero-content h1 {
-                font-size: 2.25rem;
+                font-size: 1.85rem;
+                margin-bottom: 1rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .hero-image img {
+                max-height: 180px;
+            }
+
+            .hero-badge {
+                font-size: 0.7rem;
+                padding: 0.25rem 0.625rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+                padding: 1rem 1.5rem;
             }
 
             .trust-bar-content {
@@ -694,18 +684,12 @@
             <a href="#" class="logo">
                 <img src="walshlogo.png" alt="Walsh Painting">
             </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#why-us">Why Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="tel:615-403-5516" class="nav-phone">(615) 403-5516</a></li>
-                <li><a href="#contact" class="btn btn-primary">Get Free Estimate</a></li>
-            </ul>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+
+            <!-- Mobile Call Now Button -->
+            <a href="tel:615-403-5516" class="mobile-call-btn">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                Call Now
+            </a>
         </nav>
     </header>
 
@@ -945,21 +929,6 @@
     </footer>
 
     <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navLinks = document.getElementById('navLinks');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-
         // Form submission
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
