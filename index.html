@@ -597,6 +597,41 @@
             font-size: 0.85rem;
         }
 
+        /* Service Areas */
+        .service-areas {
+            padding: 4rem 1.5rem;
+            background: var(--white);
+            border-top: 1px solid var(--gray-200);
+        }
+        
+        .areas-grid {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .area-link {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: var(--gray-50);
+            border: 1px solid var(--gray-200);
+            border-radius: 6px;
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+        
+        .area-link:hover {
+            background: var(--navy);
+            color: var(--white);
+            border-color: var(--navy);
+        }
+
         /* Responsive */
         @media (max-width: 968px) {
             .hero-container {
