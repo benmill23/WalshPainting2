@@ -4,7 +4,7 @@ export const site = {
   tagline: "Dedicated To The Finest Finish",
   description:
     "Professional residential and commercial painting in Nashville, TN. Interior, exterior, cabinets, and commercial — quality workmanship with honest pricing.",
-  url: "https://walshpainting.com",
+  url: "https://walshpainters.com",
   ogImage: "/og-image.png",
   phone: "(615) 403-5516",
   phoneRaw: "+16154035516",
