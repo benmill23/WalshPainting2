@@ -12,8 +12,8 @@ export function WhyUs() {
     <section className="bg-navy py-20 text-white">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto mb-12 max-w-2xl text-center">
-          <h2 className="text-3xl text-white md:text-4xl">Why Choose Walsh Painting</h2>
-          <p className="mt-3 text-lg text-white/70">
+          <h2 style={{ color: "#ffffff" }} className="text-3xl md:text-4xl">Why Choose Walsh Painting</h2>
+          <p style={{ color: "#ffffff" }} className="mt-3 text-lg">
             Committed to delivering exceptional results on every project.
           </p>
         </div>
@@ -24,8 +24,8 @@ export function WhyUs() {
               <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-white/10">
                 <Icon className="h-7 w-7 fill-cyan" />
               </div>
-              <h3 className="font-sans text-base font-semibold text-white">{title}</h3>
-              <p className="mt-1 text-sm text-white">{body}</p>
+              <h3 style={{ color: "#ffffff" }} className="font-sans text-base font-semibold">{title}</h3>
+              <p style={{ color: "#ffffff" }} className="mt-1 text-sm">{body}</p>
             </div>
           ))}
         </div>
