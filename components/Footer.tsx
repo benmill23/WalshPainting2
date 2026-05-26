@@ -9,7 +9,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 md:grid-cols-4">
         <div className="md:col-span-1">
           <Image
-            src="/walshlogo.png"
+            src="/walshlogo-transparent-copy.png"
             alt={site.name}
             width={180}
             height={50}
