@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section className="bg-cream">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-2 md:py-28">
-        <div className="text-center md:text-left">
+        <div className="order-2 text-center md:order-1 md:text-left">
           <span className="mb-4 inline-block rounded bg-gold px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
             Serving Greater Nashville
           </span>
@@ -31,7 +31,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="flex justify-center md:justify-end">
+        <div className="order-1 flex justify-center md:order-2 md:justify-end">
           <Image
             src="/walshlogo-transparent-copy.png"
             alt={`${site.name} — Nashville house painters`}

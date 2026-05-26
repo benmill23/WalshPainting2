@@ -25,7 +25,7 @@ export function WhyUs() {
                 <Icon className="h-7 w-7 fill-cyan" />
               </div>
               <h3 className="font-sans text-base font-semibold text-white">{title}</h3>
-              <p className="mt-1 text-sm text-white/60">{body}</p>
+              <p className="mt-1 text-sm text-white">{body}</p>
             </div>
           ))}
         </div>
