@@ -3,6 +3,7 @@ import { TrustBar } from "@/components/TrustBar";
 import { ServicesGrid } from "@/components/ServicesGrid";
 import { FeaturedWork } from "@/components/FeaturedWork";
 import { WhyUs } from "@/components/WhyUs";
+import { LeadSafeBadge } from "@/components/LeadSafeBadge";
 import { CallToAction } from "@/components/CallToAction";
 import { ServiceAreasGrid } from "@/components/ServiceAreasGrid";
 import { Faq } from "@/components/Faq";
@@ -19,6 +20,7 @@ export default function Home() {
       <ServicesGrid />
       <FeaturedWork />
       <WhyUs />
+      <LeadSafeBadge />
       <CallToAction />
       <ServiceAreasGrid />
       <Faq faqs={generalFaqs} />

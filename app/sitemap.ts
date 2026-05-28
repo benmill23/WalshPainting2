@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/services`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${site.url}/service-area`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${site.url}/gallery`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${site.url}/lead-safe-certified`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
     { url: `${site.url}/contact`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
   ];
 
