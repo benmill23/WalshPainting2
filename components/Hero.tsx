@@ -5,7 +5,16 @@ import { CallButton } from "./CallButton";
 
 export function Hero() {
   return (
-    <section className="bg-cream">
+    <section className="relative isolate overflow-hidden bg-cream">
+      <Image
+        src="/walsh-painting-photos/seating-nook-white.jpg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="-z-20 object-cover"
+      />
+      <div aria-hidden className="absolute inset-0 -z-10 bg-cream/85" />
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-2 md:py-28">
         <div className="order-2 text-center md:order-1 md:text-left">
           <span className="mb-4 inline-block rounded bg-gold px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy">
